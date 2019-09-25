@@ -46,7 +46,6 @@ def parse_plaintext_script(path):
                 output[current_act][current_scene] = {}
                 french_scene = 1
             elif is_change(ACTOR_MOVEMENTS, line):
-                print(json.dumps(output, indent=4))
                 changed_characters = [
                     word.strip(string.punctuation)
                     for word in line.strip().split(" ")
