@@ -56,7 +56,7 @@ def parse_plaintext_script(path):
                     movement, current_characters, changed_characters
                 )
                 if any(current_characters):
-                    output[current_act][current_scene][str(french_scene)] = current_characters[:]
+                    output[current_act][current_scene][str(french_scene)] = line
                 french_scene += 1
     return output
 

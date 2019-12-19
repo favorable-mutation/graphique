@@ -17,9 +17,7 @@
         {% for fr in data[act][scene] %}
         <tr>
             <td>{{ fr }}</td>
-            {% for character in data[act][scene][fr] %}
-            <td>{{ character }}</td>
-            {% endfor %}
+            <td>{{ data[act][scene][fr] }}</td>
         </tr>
         {% endfor %}
         {% endfor %}
